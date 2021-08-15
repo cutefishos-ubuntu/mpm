@@ -19,7 +19,8 @@ The following features are planned to be added at some point:
 - MPR dependencies
 
 ## Installation and usage
-makedeb [PKGBUILD](https://raw.githubusercontent.com/cutefishos-ubuntu/mpm/main/makedeb/PKGBUILD)
+Download file: [PKGBUILD](https://raw.githubusercontent.com/cutefishos-ubuntu/mpm/main/makedeb/PKGBUILD)
+In the folder with the downloaded file, open a terminal and run `makedeb -i`
 
 Help with available commands can also be found after installation with `mpm --help`.
 
