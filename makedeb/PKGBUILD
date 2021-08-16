@@ -1,5 +1,5 @@
-# Maintainer: Hunter Wittenborn <hunter@hunterwittenborn.com>
 # Maintainer: Maksym Titenko <titenko.m@gmail.com>
+# Contributor: Hunter Wittenborn <hunter@hunterwittenborn.com>
 
 pkgname=mpm
 pkgver=3.7.1
@@ -10,7 +10,6 @@ depends=('jq' 'curl')
 url="https://github.com/cutefishos-ubuntu/mpm"
 options=('emptydirs')
 control_fields=("MPR-Package: ${pkgname}")
-
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('SKIP')
 
@@ -33,4 +32,5 @@ package() {
 
     # Set package version
     sed -i "s|mpm_version=.*|mpm_version='${pkgver}-${pkgrel}'|" "${pkgdir}/usr/bin/mpm"
-}
+    }
+    
